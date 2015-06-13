@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <p id="test1">Test P</p>
-    <form name="csrfForm2" action="https://learnsec.cloudapp.net/user/csrfchallengetwo/plusplus" method="POST">
-    <input type="hidden" id="csrf2UserId" name="userId" value="715a26d52006ebd432c96ab9b00acc1027be72ff" />
-    </form>
-  </body>
+
+  <p id="test1">Test P</p>
+  <form name="csrfForm2" action="https://learnsec.cloudapp.net/user/csrfchallengetwo/plusplus" method="POST">
+  <input type="hidden" id="csrf2UserId" name="userId" value="715a26d52006ebd432c96ab9b00acc1027be72ff" />
+  </form>
   <script>
     document.getElementById("test1").innerHTML = document.getElementById("iframe").contentDocument.forms[0].token.value;
   </script>
-</html>
