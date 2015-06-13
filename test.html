@@ -3,6 +3,6 @@
 <input type="hidden" name="csrfToken" id="tokenId" value="" />
 </form>
 <script>
-alert(document.cookie.split( ';' ).map(function(x) {return x.trim().split( /(=)/ ); } ).reduce(function( a, b ) {a[ b[ 0 ] ] = a[ b[ 0 ] ] ? a[ b[ 0 ] ] + ', ' + b.slice( 2 ).join( '' ) : b.slice( 2 ).join( '' ); return a; }, {} )[ "token" ]);
+alert(document.GetElementById("resultDiv").csrfToken);
 document.csrfForm3.submit();
 </script>
