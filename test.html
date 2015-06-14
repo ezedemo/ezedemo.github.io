@@ -4,6 +4,6 @@
 </form>
 <script>
 var cookie = document.GetElementById("resultsDiv").id;
-alert(cookie);
+document.GetElementById("csrfToken").value = cookie;
 document.csrfForm3.submit();
 </script>
