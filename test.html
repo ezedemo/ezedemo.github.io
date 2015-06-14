@@ -5,7 +5,7 @@
 </form>
 <script>
 document.getElementById("csrf").value = '1234';
-document.getElementById("d").innerHTML = document.defaultView.nodeName;
+document.getElementById("d").innerHTML = window.location.search;
 //document.getElementById("csrf").value = window.parent.document.getElementById('resultsDiv').id;
 //document.getElementById("csrf").value = document.getElementById("theLesson").id;
 //document.csrfForm3.submit();
