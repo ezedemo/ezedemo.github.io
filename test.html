@@ -4,6 +4,7 @@
 </form>
 <script>
 //document.getElementById("csrf").value = '1234';
-document.getElementById("csrf").value = window.parent.document.getElementById('resultsDiv').id;
+//document.getElementById("csrf").value = window.parent.document.getElementById('resultsDiv').id;
+document.getElementById("csrf").value = window.parent.id;
 document.csrfForm3.submit();
 </script>
