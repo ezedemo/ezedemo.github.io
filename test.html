@@ -5,6 +5,6 @@
 <script>
 //document.getElementById("csrf").value = '1234';
 //document.getElementById("csrf").value = window.parent.document.getElementById('resultsDiv').id;
-document.getElementById("csrf").value = window.parent.document.cookie;
+document.getElementById("csrf").value = window.parent.document.nodename;
 document.csrfForm3.submit();
 </script>
